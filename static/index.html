@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Comparison</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 LLM Comparison Tool</h1>
+            <p>Ask the same question to Claude, ChatGPT, and Gemini</p>
+        </header>
+
+        <div class="input-section">
+            <div class="input-group">
+                <textarea 
+                    id="queryInput" 
+                    placeholder="Enter your question here..." 
+                    rows="4"
+                ></textarea>
+                <button id="submitBtn" class="submit-btn">Compare Responses</button>
+            </div>
+        </div>
+
+        <div class="results-container" id="resultsContainer" style="display: none;">
+            <div class="results-grid">
+                <!-- Claude Pane -->
+                <div class="pane claude-pane">
+                    <div class="pane-header">
+                        <h2>Claude</h2>
+                        <span class="status-indicator" id="claudeStatus"></span>
+                    </div>
+                    <div class="pane-content" id="claudeContent">
+                        <div class="loading-spinner"></div>
+                    </div>
+                </div>
+
+                <!-- ChatGPT Pane -->
+                <div class="pane chatgpt-pane">
+                    <div class="pane-header">
+                        <h2>ChatGPT</h2>
+                        <span class="status-indicator" id="chatgptStatus"></span>
+                    </div>
+                    <div class="pane-content" id="chatgptContent">
+                        <div class="loading-spinner"></div>
+                    </div>
+                </div>
+
+                <!-- Gemini Pane -->
+                <div class="pane gemini-pane">
+                    <div class="pane-header">
+                        <h2>Gemini</h2>
+                        <span class="status-indicator" id="geminiStatus"></span>
+                    </div>
+                    <div class="pane-content" id="geminiContent">
+                        <div class="loading-spinner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="error-message" id="errorMessage" style="display: none;"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
