@@ -109,7 +109,7 @@ Send a query to all three LLMs
 
 You can modify the LLM models used by editing `llm_comparison_app.py`:
 
-- **Claude**: `model="claude-opus-4-1-20250805"`
+- **Claude**: `model="claude-opus-4-6"`
 - **ChatGPT**: `model="gpt-4o-mini"`
 - **Gemini**: `model="gemini-2.0-flash"`
 
