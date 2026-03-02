@@ -1,9 +1,6 @@
 requests
 python-dotenv
-gradio
-pypdf
 openai
-openai-agents
 fastapi
 uvicorn
 anthropic
